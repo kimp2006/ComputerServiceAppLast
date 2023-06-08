@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/loadingFragment">
+
+    <navigation android:id="@+id/auth"
+        app:startDestination="@id/loginFragment">
+        <fragment
+            android:id="@+id/registrationFragment"
+            android:name="com.example.computerserviceapp.auth.ui.RegistrationFragment"
+            android:label="fragment_registration"
+            tools:layout="@layout/fragment_registration" >
+            <action
+                android:id="@+id/action_registrationFragment_to_loginFragment"
+                app:destination="@id/loginFragment"
+                app:popUpTo="@id/loginFragment"
+                app:popUpToInclusive="true" />
+            <argument
+                android:name="bottomNavShow"
+                app:argType="boolean"
+                android:defaultValue="false" />
+        </fragment>
+        <fragment
+            android:id="@+id/loginFragment"
+            android:name="com.example.computerserviceapp.auth.ui.LoginFragment"
+            android:label="fragment_login"
+            tools:layout="@layout/fragment_login">
+            <action
+                android:id="@+id/action_loginFragment_to_registrationFragment"
+                app:destination="@id/registrationFragment" />
+            <argument
+                android:name="bottomNavShow"
+                app:argType="boolean"
+                android:defaultValue="false" />
+        </fragment>
+    </navigation>
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="com.example.computerserviceapp.auth.ui.LoadingFragment"
+        android:label="fragment_loading"
+        tools:layout="@layout/fragment_loading">
+        <argument
+            android:name="bottomNavShow"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_auth"
+        app:destination="@id/auth"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/loadingFragment"
+        app:popUpToInclusive="true" />
+    <action
+        android:id="@+id/action_global_loadingFragment"
+        app:destination="@id/loadingFragment"
+        app:launchSingleTop="true"
+        app:popUpToInclusive="false" />
+    <navigation android:id="@+id/home"
+        app:startDestination="@id/listFragment">
+        <fragment
+            android:id="@+id/messageFragment"
+            android:name="com.example.computerserviceapp.main.MessageFragment"
+            android:label="fragment_message"
+            tools:layout="@layout/fragment_message" />
+        <fragment
+            android:id="@+id/listFragment"
+            android:name="com.example.computerserviceapp.main.orders.ui.list.ListFragment"
+            android:label="fragment_list"
+            tools:layout="@layout/fragment_list" >
+            <action
+                android:id="@+id/action_listFragment_to_orderDetailsFragment"
+                app:destination="@id/orderDetailsFragment" />
+            <action
+                android:id="@+id/action_listFragment_to_orderCreateFragment"
+                app:destination="@id/orderCreateFragment" />
+
+        </fragment>
+        <fragment
+            android:id="@+id/orderCreateFragment"
+            android:name="com.example.computerserviceapp.main.orders.ui.create.OrderCreateFragment"
+            android:label="fragment_order_create"
+            tools:layout="@layout/fragment_order_create" >
+            <action
+                android:id="@+id/action_orderCreateFragment_to_listFragment"
+                app:destination="@id/listFragment"
+                app:popUpTo="@id/listFragment"
+                app:popUpToInclusive="true" />
+        </fragment>
+        <fragment
+            android:id="@+id/accountFragment"
+            android:name="com.example.computerserviceapp.main.account.AccountFragment"
+            android:label="AccountFragment" />
+        <fragment
+            android:id="@+id/orderDetailsFragment"
+            android:name="com.example.computerserviceapp.main.orders.ui.details.OrderDetailsFragment"
+            android:label="OrderDetailsFragment" >
+            <action
+                android:id="@+id/action_orderDetailsFragment_to_listFragment"
+                app:destination="@id/listFragment"
+                app:popUpTo="@id/listFragment" />
+        </fragment>
+    </navigation>
+    <action
+        android:id="@+id/action_global_home"
+        app:destination="@id/home"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/loadingFragment"
+        app:popUpToInclusive="true" />
+
+
+</navigation>
