@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="message"
+            type="com.example.computerserviceapplast.chat.models.Message" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/messageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:paddingHorizontal="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/message_bg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@{message.senderName}"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:maxWidth="300dp"
+                android:minWidth="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="@{message.value}"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="#D1D1D1"
+                android:layout_gravity="end"
+                android:textSize="11sp"
+                android:text="@{message.getTime()}"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</layout>
