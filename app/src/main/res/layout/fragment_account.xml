@@ -6,7 +6,7 @@
     <data>
         <variable
             name="info"
-            type="com.example.computerserviceapp.firebase.UserInformation" />
+            type="com.example.computerserviceapplast.firebase.UserInformation" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

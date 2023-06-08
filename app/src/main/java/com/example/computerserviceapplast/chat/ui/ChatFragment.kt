@@ -1,4 +1,4 @@
-package com.example.computerserviceapp.chat.ui
+package com.example.computerserviceapplast.chat.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.lifecycleScope
-import com.example.computerserviceapp.chat.models.Message
-import com.example.computerserviceapp.firebase.UserInformationDataSource
-import com.example.computerserviceapp.databinding.FragmentChatBinding
+import com.example.computerserviceapplast.chat.models.Message
+import com.example.computerserviceapplast.firebase.UserInformationDataSource
+import com.example.computerserviceapplast.databinding.FragmentChatBinding
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.ChildEventListener
 import com.google.firebase.database.DataSnapshot

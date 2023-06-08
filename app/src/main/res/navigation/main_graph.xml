@@ -61,12 +61,12 @@
         app:startDestination="@id/listFragment">
         <fragment
             android:id="@+id/messageFragment"
-            android:name="com.example.computerserviceapp.main.MessageFragment"
+            android:name="com.example.computerserviceapplast.main.MessageFragment"
             android:label="fragment_message"
             tools:layout="@layout/fragment_message" />
         <fragment
             android:id="@+id/listFragment"
-            android:name="com.example.computerserviceapp.main.orders.ui.list.ListFragment"
+            android:name="com.example.computerserviceapplast.main.orders.ui.list.ListFragment"
             android:label="fragment_list"
             tools:layout="@layout/fragment_list" >
             <action
@@ -79,7 +79,7 @@
         </fragment>
         <fragment
             android:id="@+id/orderCreateFragment"
-            android:name="com.example.computerserviceapp.main.orders.ui.create.OrderCreateFragment"
+            android:name="com.example.computerserviceapplast.main.orders.ui.create.OrderCreateFragment"
             android:label="fragment_order_create"
             tools:layout="@layout/fragment_order_create" >
             <action
@@ -90,11 +90,11 @@
         </fragment>
         <fragment
             android:id="@+id/accountFragment"
-            android:name="com.example.computerserviceapp.main.account.AccountFragment"
+            android:name="com.example.computerserviceapplast.main.account.AccountFragment"
             android:label="AccountFragment" />
         <fragment
             android:id="@+id/orderDetailsFragment"
-            android:name="com.example.computerserviceapp.main.orders.ui.details.OrderDetailsFragment"
+            android:name="com.example.computerserviceapplast.main.orders.ui.details.OrderDetailsFragment"
             android:label="OrderDetailsFragment" >
             <action
                 android:id="@+id/action_orderDetailsFragment_to_listFragment"

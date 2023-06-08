@@ -1,4 +1,4 @@
-package com.example.computerserviceapp.main.orders.ui
+package com.example.computerserviceapplast.main.orders.ui
 
 open class CreateUiState<T>(val data: T? = null, val exception: Exception? = null) {
 

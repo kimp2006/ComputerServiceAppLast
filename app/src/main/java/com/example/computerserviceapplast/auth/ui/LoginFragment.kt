@@ -11,10 +11,10 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.Navigation
 import androidx.navigation.findNavController
-import com.example.computerserviceapp.R
-import com.example.computerserviceapp.auth.data.UserSession
-import com.example.computerserviceapp.databinding.FragmentLoginBinding
 import com.example.computerserviceapp.utils.getTrimText
+import com.example.computerserviceapplast.R
+import com.example.computerserviceapplast.auth.data.UserSession
+import com.example.computerserviceapplast.databinding.FragmentLoginBinding
 import kotlinx.coroutines.launch
 
 

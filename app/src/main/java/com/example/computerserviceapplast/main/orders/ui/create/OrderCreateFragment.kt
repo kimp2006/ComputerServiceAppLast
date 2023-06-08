@@ -1,4 +1,4 @@
-package com.example.computerserviceapp.main.orders.ui.create
+package com.example.computerserviceapplast.main.orders.ui.create
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -11,12 +11,11 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.Navigation
-import com.example.computerserviceapp.R
-import com.example.computerserviceapp.databinding.FragmentOrderCreateBinding
 import com.example.computerserviceapp.utils.getTrimText
+import com.example.computerserviceapplast.R
+import com.example.computerserviceapplast.databinding.FragmentOrderCreateBinding
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 class OrderCreateFragment : Fragment() {

@@ -1,4 +1,4 @@
-package com.example.computerserviceapp.chat.models
+package com.example.computerserviceapplast.chat.models
 
 data class Chat(
     val id: String = "",

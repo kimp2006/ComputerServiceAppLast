@@ -2,6 +2,7 @@ package com.example.computerserviceapplast
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.core.view.isVisible
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import com.example.computerserviceapplast.databinding.ActivityMainBinding
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         val bottomNavView = binding.bottomNavigation
         NavigationUI.setupWithNavController(bottomNavView, navHostFragment.navController)
 
-        navHostFragment.navController.addOnDestinationChangedListener { controller, destination, arguments ->
+        navHostFragment.navController.addOnDestinationChangedListener { _, _, arguments ->
 
             bottomNavView.isVisible = arguments?.getBoolean("bottomNavShow") ?: true
 

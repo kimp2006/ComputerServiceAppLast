@@ -1,12 +1,12 @@
-package com.example.computerserviceapp.main.orders.ui.list
+package com.example.computerserviceapplast.main.orders.ui.list
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.computerserviceapp.R
-import com.example.computerserviceapp.firebase.Order
-import com.example.computerserviceapp.databinding.OrderListItemBinding
+import com.example.computerserviceapplast.R
+import com.example.computerserviceapplast.databinding.OrderListItemBinding
+import com.example.computerserviceapplast.firebase.Order
 
 class OrderListAdapter : RecyclerView.Adapter<OrderListAdapter.ViewHolder>() {
 

@@ -6,15 +6,15 @@
     <data>
         <variable
             name="info"
-            type="com.example.computerserviceapp.firebase.UserInformation" />
+            type="com.example.computerserviceapplast.firebase.UserInformation" />
 
         <variable
             name="order"
-            type="com.example.computerserviceapp.firebase.Order" />
+            type="com.example.computerserviceapplast.firebase.Order" />
 
         <variable
             name="worker"
-            type="com.example.computerserviceapp.firebase.UserInformation" />
+            type="com.example.computerserviceapplast.firebase.UserInformation" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

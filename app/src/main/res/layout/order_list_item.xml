@@ -6,7 +6,7 @@
     <data>
         <variable
             name="order"
-            type="com.example.computerserviceapp.firebase.Order" />
+            type="com.example.computerserviceapplast.firebase.Order" />
 
     </data>
 

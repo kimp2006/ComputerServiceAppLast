@@ -1,6 +1,6 @@
 package com.example.computerserviceapplast.auth.ui
 
-import com.example.computerserviceapp.auth.data.LoggedUser
+import com.example.computerserviceapplast.auth.data.LoggedUser
 
 open class AuthUiState {
     data class Success(val loggedUser: LoggedUser): AuthUiState()

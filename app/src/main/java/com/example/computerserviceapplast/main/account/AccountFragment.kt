@@ -1,4 +1,4 @@
-package com.example.computerserviceapp.main.account
+package com.example.computerserviceapplast.main.account
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,12 +10,11 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.Navigation
-import com.example.computerserviceapp.R
-import com.example.computerserviceapp.databinding.FragmentAccountBinding
 import com.example.computerserviceapp.utils.getTrimText
+import com.example.computerserviceapplast.R
+import com.example.computerserviceapplast.databinding.FragmentAccountBinding
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 

@@ -1,10 +1,10 @@
-package com.example.computerserviceapp.main.orders.ui.create
+package com.example.computerserviceapplast.main.orders.ui.create
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.computerserviceapp.firebase.Order
-import com.example.computerserviceapp.firebase.OrderDataSource
-import com.example.computerserviceapp.main.orders.ui.CreateUiState
+import com.example.computerserviceapplast.firebase.Order
+import com.example.computerserviceapplast.firebase.OrderDataSource
+import com.example.computerserviceapplast.main.orders.ui.CreateUiState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch

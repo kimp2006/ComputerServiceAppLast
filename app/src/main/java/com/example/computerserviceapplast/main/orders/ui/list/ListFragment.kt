@@ -1,4 +1,4 @@
-package com.example.computerserviceapp.main.orders.ui.list
+package com.example.computerserviceapplast.main.orders.ui.list
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -11,9 +11,8 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.Navigation
-import com.example.computerserviceapp.R
-import com.example.computerserviceapp.auth.data.UserSession
-import com.example.computerserviceapp.databinding.FragmentListBinding
+import com.example.computerserviceapplast.R
+import com.example.computerserviceapplast.databinding.FragmentListBinding
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.launch

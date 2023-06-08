@@ -1,11 +1,11 @@
-package com.example.computerserviceapp.main.account
+package com.example.computerserviceapplast.main.account
 
 import android.content.res.Resources.NotFoundException
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
-import com.example.computerserviceapp.firebase.UserInformation
-import com.example.computerserviceapp.firebase.UserInformationDataSource
+import com.example.computerserviceapplast.firebase.UserInformation
+import com.example.computerserviceapplast.firebase.UserInformationDataSource
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch

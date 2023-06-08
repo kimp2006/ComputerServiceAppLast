@@ -1,14 +1,12 @@
-package com.example.computerserviceapp.main.orders.ui.details
+package com.example.computerserviceapplast.main.orders.ui.details
 
 import android.content.res.Resources.NotFoundException
 import androidx.lifecycle.*
-import com.example.computerserviceapp.firebase.Order
-import com.example.computerserviceapp.firebase.OrderDataSource
-import com.example.computerserviceapp.firebase.UserInformation
-import com.example.computerserviceapp.firebase.UserInformationDataSource
-import com.example.computerserviceapp.main.orders.ui.CreateUiState
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
+import com.example.computerserviceapplast.firebase.Order
+import com.example.computerserviceapplast.firebase.OrderDataSource
+import com.example.computerserviceapplast.firebase.UserInformation
+import com.example.computerserviceapplast.firebase.UserInformationDataSource
+import com.example.computerserviceapplast.main.orders.ui.CreateUiState
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 

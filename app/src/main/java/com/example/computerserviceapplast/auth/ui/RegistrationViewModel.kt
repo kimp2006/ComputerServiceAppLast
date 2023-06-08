@@ -2,9 +2,9 @@ package com.example.computerserviceapplast.auth.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.computerserviceapp.auth.data.LoggedUser
-import com.example.computerserviceapp.firebase.UserInformation
-import com.example.computerserviceapp.firebase.UserInformationDataSource
+import com.example.computerserviceapplast.firebase.UserInformation
+import com.example.computerserviceapplast.firebase.UserInformationDataSource
+import com.example.computerserviceapplast.auth.data.LoggedUser
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.flow.MutableStateFlow

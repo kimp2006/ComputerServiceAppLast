@@ -1,13 +1,13 @@
-package com.example.computerserviceapp.chat.ui
+package com.example.computerserviceapplast.chat.ui
 
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.computerserviceapp.R
-import com.example.computerserviceapp.chat.models.Message
-import com.example.computerserviceapp.databinding.MessageLayoutBinding
+import com.example.computerserviceapplast.R
+import com.example.computerserviceapplast.chat.models.Message
+import com.example.computerserviceapplast.databinding.MessageLayoutBinding
 
 class MessageListAdapter (private val ownerId: String) : RecyclerView.Adapter<MessageListAdapter.ViewHolder>() {
 

@@ -1,4 +1,4 @@
-package com.example.computerserviceapp.main
+package com.example.computerserviceapplast.main
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.computerserviceapp.R
+import com.example.computerserviceapplast.R
 
 class MessageFragment : Fragment() {
 
